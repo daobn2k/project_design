@@ -1,0 +1,230 @@
+@import '../../scss/variable.scss';
+@import '../../scss/common.scss';
+.home {
+  @extend .flex-start;
+  flex-direction: column;
+  width: 100%;
+  .title {
+    color: $brownColor;
+    font-size: 46px;
+    line-height: 52px;
+    font-weight: bold;
+  }
+  .discover {
+    background-color: $yellowColor;
+    padding: 32px 0;
+    width: 100%;
+    @extend .flex;
+    flex-direction: column;
+
+    .discover-description {
+      @extend .flex;
+      .discover-item {
+        @extend .flex;
+        flex-direction: column;
+        .discover-card {
+          padding: 24px 16px;
+          background-color: $lightPink;
+          border-radius: 10px;
+          width: 130px;
+          @extend .flex;
+        }
+        .discover-text {
+          text-transform: uppercase;
+          text-align: center;
+          max-width: 60%;
+          word-break: break-word;
+          color: $brownColor;
+          @extend .medium-title;
+        }
+      }
+    }
+  }
+  .cocktails {
+    background-color: $blackColor;
+    width: 100%;
+    @extend .flex;
+    flex-direction: column;
+    .cocktails-description {
+      @extend .flex-start;
+      flex-direction: column;
+      .cocktails-card {
+        @extend .flex;
+        margin-bottom: 50px;
+        gap: 36px;
+        .cocktails-image {
+          object-fit: cover;
+        }
+        .cocktails-detail {
+          @extend .flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+
+          .cocktails-title {
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            position: relative;
+            @extend .medium-title;
+            color: $brownColor;
+            &:before {
+              content: '';
+              display: 'block';
+              color: #b3604b;
+              background-color: #b3604b;
+              width: 75%;
+              height: 4px;
+              position: absolute;
+              border-radius: 10px;
+              bottom: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .reverse {
+    flex-direction: row-reverse;
+    .cocktails-button {
+      width: 100%;
+      @extend .flex-end;
+    }
+  }
+  .cocktails-loadmore {
+    background: $heavyBlue;
+    color: $lightPink;
+    outline: none;
+    border: oldlace;
+    @extend .text-small;
+    width: 110px;
+    @extend .flex;
+    height: 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .cocktails-text {
+    @extend .text-small;
+    color: $brownColor;
+  }
+  .news {
+    background-color: $yellowColor;
+    padding: 50px;
+    @extend .flex;
+    .title {
+      margin: 0;
+      @extend .flex;
+    }
+    .news-description {
+      width: 100%;
+      @extend .flex;
+      align-items: flex-start;
+      gap: 32px;
+    }
+    .news-button {
+      @extend .flex;
+    }
+    .news-subtitle {
+      @extend .text-small;
+      color: $brownColor;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .news-card {
+      @extend .flex-start;
+      flex-direction: column;
+      width: 60%;
+    }
+    .new-logo {
+      width: 40%;
+      height: 100%;
+      img {
+        max-width: 500px;
+        max-height: 400px;
+      }
+    }
+  }
+  .about{
+    background-image: url('../../images/logoHomePage.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height:500px;
+    position: relative;
+    .title{
+        position: absolute;
+        right: 65px;
+        font-size: 32px;
+        line-height: 40px;
+        top: 24%;
+    }
+    .cocktails-text{
+        position: absolute;
+        padding: 0 50px;
+        left: 54%;
+        top: 30%;
+        white-space: pre-line;
+        word-break: break-word;
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .new-logo {
+    img {
+      max-width: 400px !important;
+      max-height: 400px !important;
+    }
+  }
+  .about{
+    .title{
+        top: 20%;
+    }
+    .cocktails-text{
+        position: absolute;
+        padding: 0 50px;
+        left: 54%;
+        top: 25%;
+        white-space: pre-line;
+        word-break: break-word;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .new-logo {
+    img {
+      max-width: 300px !important;
+      max-height: 300px !important;
+    }
+  }
+  .about{
+    .title{
+        top: 15% !important;
+    }
+    .cocktails-text{
+        top: 20% !important;
+        padding: 0 30px !important;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .new-logo {
+    img {
+      max-width: 250px !important;
+      max-height: 250px !important;
+    }
+  }
+  .about{
+    .title{
+        top: 10% !important;
+    }
+    .cocktails-text{
+        top: 15% !important;
+        padding: 0 25px !important;
+
+    }
+  }
+}

@@ -43,3 +43,38 @@
     line-height: 20px;
     font-weight: bold;
 }
+
+.sub-title{
+    font-size:$fontBig;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.sub-title-bold{
+    font-size:$fontBig;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.medium-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.medium-title-bold{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.super-title{
+    font-size:$fontSuper;
+    line-height: 36px;
+    font-weight: 500;
+}
+.super-title-bold{
+    font-size:$fontSuper;
+    line-height: 36px;
+    font-weight: bold;
+}
