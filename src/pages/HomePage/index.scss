@@ -59,13 +59,12 @@
           @extend .flex-start;
           align-items: flex-start;
           flex-direction: column;
-
           .cocktails-title {
             width: 100%;
             text-align: left;
             display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
+            align-items: flex-start;
+            justify-content:flex-start;
             position: relative;
             @extend .medium-title;
             color: $brownColor;
@@ -87,6 +86,24 @@
   }
   .reverse {
     flex-direction: row-reverse;
+    .cocktails-title {
+        align-items: flex-end !important;
+        justify-content: flex-end !important;
+        position: relative;
+        @extend .medium-title;
+        color: $brownColor;
+        &:before {
+          content: '';
+          display: 'block';
+          color: #b3604b;
+          background-color: #b3604b;
+          width: 75%;
+          height: 4px;
+          position: absolute;
+          border-radius: 10px;
+          bottom: -20px;
+        }
+      }
     .cocktails-button {
       width: 100%;
       @extend .flex-end;
