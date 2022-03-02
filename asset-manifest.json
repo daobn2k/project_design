@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/project_design/static/css/main.cd1f4956.css",
-    "main.js": "/project_design/static/js/main.acd26364.js",
+    "main.css": "/project_design/static/css/main.12df8fd2.css",
+    "main.js": "/project_design/static/js/main.1f3fd27e.js",
+    "static/media/manhattan.jpg": "/project_design/static/media/manhattan.10004de05c1359ea8df4.jpg",
+    "static/media/logoHomePage.jpg": "/project_design/static/media/logoHomePage.64dade5ed1a956739b1a.jpg",
+    "static/media/martini.jpg": "/project_design/static/media/martini.a2ef44683a04f038c0e6.jpg",
+    "static/media/mojto.jpg": "/project_design/static/media/mojto.42819865f58a7be9c32a.jpg",
+    "static/media/HOMEPAGELOGO.png": "/project_design/static/media/HOMEPAGELOGO.da7c436ccb6d242dead1.png",
+    "static/media/NEGRONI.jpg": "/project_design/static/media/NEGRONI.fa35808d88bbe7c92c1f.jpg",
     "static/media/logo.png": "/project_design/static/media/logo.f64a0f62f992cee5d2d0.png",
+    "static/media/logoHome1.png": "/project_design/static/media/logoHome1.2ff0847dc5eab6d60c62.png",
+    "static/media/logoHome2.png": "/project_design/static/media/logoHome2.a5ba35dfc62d684ad6c7.png",
+    "static/media/logoHome3.png": "/project_design/static/media/logoHome3.3cb88636654422de6b4e.png",
     "index.html": "/project_design/index.html",
-    "main.cd1f4956.css.map": "/project_design/static/css/main.cd1f4956.css.map",
-    "main.acd26364.js.map": "/project_design/static/js/main.acd26364.js.map"
+    "main.12df8fd2.css.map": "/project_design/static/css/main.12df8fd2.css.map",
+    "main.1f3fd27e.js.map": "/project_design/static/js/main.1f3fd27e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd1f4956.css",
-    "static/js/main.acd26364.js"
+    "static/css/main.12df8fd2.css",
+    "static/js/main.1f3fd27e.js"
   ]
 }
