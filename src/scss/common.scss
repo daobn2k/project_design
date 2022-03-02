@@ -1,0 +1,45 @@
+@import "./variable.scss";
+.flex{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.flex-end{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.flex-start{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.flex-beetween{
+    @extend .flex;
+    justify-content:space-between;
+}
+.text-mini{
+    font-size:$font;
+    line-height: 14px;
+    font-weight: 400;
+}
+.text-small{
+    font-size: $fontSmall;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.title{
+    font-size:  $fontMedium;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.title-bold{
+    font-size: $fontMedium;
+    line-height: 20px;
+    font-weight: bold;
+}

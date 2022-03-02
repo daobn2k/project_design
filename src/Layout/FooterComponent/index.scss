@@ -1,0 +1,47 @@
+@import "../../scss/variable.scss";
+@import "../../scss/common.scss";
+.footer{
+    background-color: $blackColor;
+    padding:50px;
+    @extend .flex-beetween;
+    gap: 24px;
+    p{
+        padding: 4px 0;
+        margin:0;
+    }
+    .header-title{
+        text-transform: uppercase;
+        color: $brownColor;
+        @extend .title-bold
+    }
+    .description-footer{
+        width: 85%;
+        @extend .flex-start;
+        align-items: flex-start;
+
+        .item-footer{
+            width: 33%;
+            @extend .flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            padding:16px;
+        }
+        .title-footer{
+            color: $grayColor;
+            @extend .title-bold;
+        }
+        .text-footer{
+            color: $black;
+            word-break: break-word;
+            @extend .text-small;
+        }
+    }
+    .icon-footer{
+        font-size: 3rem;
+        color: $brownColor;
+        gap:12px;
+        @extend .flex-end;
+    }
+}
+
+

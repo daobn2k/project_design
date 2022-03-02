@@ -1,0 +1,39 @@
+@import "../../scss/variable.scss";
+@import "../../scss/common.scss";
+.main{
+    @extend .flex;
+    flex-direction: column;
+    .tab{
+    @extend .flex;
+    padding: 8px 100px;
+    justify-content: space-around;
+    width: 100%;
+    background-color: $blackColor;
+        .tab-item{
+            text-transform: uppercase;
+            color: $brownColor;
+            @extend .title;
+            padding:0;
+            margin: 0;
+        }   
+        .search{
+            position: relative;
+            cursor: pointer;
+            .search-input{
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                width: 106px;
+                padding: 2px 6px;
+            }
+            svg{
+                position: absolute;
+                right: 10px;
+                bottom: 4px;
+                font-size: 0.75rem;
+                color: $brownColor;
+            }
+        }
+    }
+}
+

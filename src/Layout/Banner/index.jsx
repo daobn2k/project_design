@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import './index';
+import './index.scss';
 const Banner  = (props) => {
     const {...rest} = props
   return (
