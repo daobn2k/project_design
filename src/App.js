@@ -1,7 +1,12 @@
+import React,{useState} from 'react';
+import Card from "./component/Card";
+import './index';
 
-function App() {
+const  App = () => {
   return (
-  <>Hello</>
+  <div className='main'>
+    <Card/>
+  </div>
   );
 }
 
