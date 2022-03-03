@@ -6,7 +6,6 @@
     .tab{
     @extend .flex;
     padding: 8px 100px;
-    justify-content: space-around;
     border-bottom: 1px solid gray;
     width: 100%;
     background-color: $blackColor;
@@ -14,7 +13,7 @@
             text-transform: uppercase;
             color: $brownColor;
             @extend .title;
-            padding:0;
+            padding: 0 36px;
             margin: 0;
         }   
         .search{

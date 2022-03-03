@@ -1,0 +1,49 @@
+@import '../../scss/variable.scss';
+@import '../../scss/common.scss';
+.discovery-root{
+  background: $blackColor;
+  width: 100%;
+}
+  .discover {
+  padding: 50px;
+  background: $blackColor;
+  width:100%;
+  gap: 24px;
+  border-bottom: 5px solid $brownColor;
+  p,h1{
+    margin: 0;
+    padding: 0;
+  }
+  @extend .flex;
+  flex-direction: column;
+  .discover-detail{
+    width: 100%;
+    @extend .flex;
+    .detail--title{
+      max-width: 350px;
+      color: $yellowColor;
+      @extend .title;
+      word-break: break-word;
+      text-align: center;
+    }
+    .detail-image{
+      object-fit: contain;
+    }
+  }
+  .discover-title {
+    color: $brownColor;
+    font-size: 46px;
+    line-height: 52px;
+    font-weight: bold;
+  }
+}
+  .discover-list{
+    display: grid;
+    row-gap: 24px;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.last{
+  border-bottom: 1px solid gray;
+}

@@ -1,0 +1,37 @@
+@import '../../scss/variable.scss';
+@import '../../scss/common.scss';
+.news{
+    background-color: $blackColor;
+    width: 100%;
+    @extend .flex;
+    flex-direction: column;
+    .news-item{
+        width: 100%;
+        border-bottom: 5px solid $brownColor;
+        @extend .flex;
+        flex-direction: column;
+        padding: 25px 50px;
+    }
+    .title {
+        color: $brownColor;
+         @extend .medium-title-bold;
+    }
+    .news-loadmore {
+        background: $heavyBlue;
+        color: $lightPink;
+        outline: none;
+        border: oldlace;
+        @extend .text-small;
+        width: 110px;
+        @extend .flex;
+        height: 28px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .card-list{
+        display: grid;
+        row-gap: 24px;
+        column-gap: 85px;
+        grid-template-columns: 1fr 1fr;
+    }
+}

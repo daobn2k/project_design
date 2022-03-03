@@ -1,0 +1,52 @@
+@import '../../scss/variable.scss';
+@import '../../scss/common.scss';
+
+.card-discover{
+    background-color: $yellowColor;
+    height: 150px;
+    width: 150px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+  
+    @extend .flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    p{
+        padding:0;
+        margin:0;
+    }
+    .title{
+        @extend .title-small-bold;
+        color:$black;
+    }
+    .text{
+        @extend .text-small;
+        color:$black;
+    }
+    .card-image{
+        bottom: 0;
+        position: absolute;
+        object-fit: contain;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.center{
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    .title{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        color: $lightPink;
+    }
+    .card-image{
+        display: none;
+    }
+}

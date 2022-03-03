@@ -1,9 +1,11 @@
 import React,{  } from 'react';
 import './index.scss';
 import { FaSearch } from "react-icons/fa";
-// import HomePage from '../../pages/HomePage';
+import HomePage from '../../pages/HomePage';
+import News from '../../pages/News';
 // import MorePage from '../../pages/More';
-import CocktailsPage from '../../pages/Cocktails';
+// import CocktailsPage from '../../pages/Cocktails';
+// import Discover from '../../pages/Discover';
 const MainComponent  = () => {
   return (
     <div  className='main'>
@@ -21,8 +23,10 @@ const MainComponent  = () => {
           </div>
         </div>
         {/* <HomePage /> */}
+        <News />
+        {/* <Discover/> */}
         {/* <MorePage/> */}
-        <CocktailsPage />
+        {/* <CocktailsPage /> */}
     </div>
   )
 }

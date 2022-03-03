@@ -1,0 +1,43 @@
+@import '../../scss/variable.scss';
+@import '../../scss/common.scss';
+.card {
+  @extend .flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  max-width: 450px;
+  .card--img {
+    background-size: cover;
+    height: 300px;
+    width: 450px;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  .card-title{
+    color: $yellowColor;
+    @extend .medium-title-bold;
+    position: relative;
+    &:before {
+        content: '';
+        display: 'block';
+        color: #b3604b;
+        background-color: #b3604b;
+        width: 75%;
+        height: 4px;
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translate(-50%,-50%);
+      }
+  } 
+  .card--content{
+    @extend .title-small;
+    color: $brownColor;
+    word-break: break-word;
+  }
+  .card--more{
+      color: red;
+      margin-left: 4px;
+  }
+}

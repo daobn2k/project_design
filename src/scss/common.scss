@@ -31,7 +31,22 @@
     line-height: 16px;
     font-weight: 400;
 }
+.text-small-bold{
+    font-size: $fontSmall;
+    line-height: 16px;
+    font-weight: bold;
+}
 
+.title-small{
+    font-size:$fontSize;
+    line-height: 20px;
+    font-weight: 400;
+}
+.title-small-bold{
+    font-size:$fontSize;
+    line-height: 20px;
+    font-weight: bold;
+}
 .title{
     font-size:  $fontMedium;
     line-height: 20px;

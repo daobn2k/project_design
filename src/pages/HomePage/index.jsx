@@ -1,9 +1,13 @@
 import React from 'react';
+import SliderBar from '../../component/SliderBar';
 import images from '../../images';
 import './index.scss';
 const HomePage = () => {
   return (
     <div className="home">
+      <div className='swiper-container'>
+        <SliderBar list={listSlider}/>
+      </div>
       <div className="discover">
         <h1 className="title">Discover</h1>
         <div className="discover-description">
@@ -112,3 +116,23 @@ const listCocktails = [
     url: images.martini,
   },
 ];
+
+
+const listSlider = [
+  {
+    url:images.homePageLogo,
+    title:"A Hard's Day Night - Góc nhỏ tối giản , ấm cúng",
+    text:'Ít ai biết ẩn mình bên con đường Bích Họa Phùng Hưng là một góc phố nhỏ, nơi của những tâm hồn lưu lạc đi trốn, phố Nguyễn Quang Bích.'
+  },
+  {
+    url:images.Blog3,
+    title:"Căn Phòng Chữa Lành Tâm Hồn - Room #210",
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do temporincididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut....'
+  },
+  {
+    url:images.Blog4,
+    title:"“Lối Đi” Trên Tầng Thượng",
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do temporincididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut....'
+  },
+  
+]
