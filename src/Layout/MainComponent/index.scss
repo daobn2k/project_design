@@ -7,6 +7,7 @@
     @extend .flex;
     padding: 8px 100px;
     justify-content: space-around;
+    border-bottom: 1px solid gray;
     width: 100%;
     background-color: $blackColor;
         .tab-item{

@@ -1,7 +1,8 @@
 import React,{  } from 'react';
 import './index.scss';
 import { FaSearch } from "react-icons/fa";
-import HomePage from '../../pages/HomePage';
+// import HomePage from '../../pages/HomePage';
+import MorePage from '../../pages/More';
 const MainComponent  = () => {
   return (
     <div  className='main'>
@@ -18,7 +19,8 @@ const MainComponent  = () => {
               <FaSearch/>
           </div>
         </div>
-        <HomePage />
+        {/* <HomePage /> */}
+        <MorePage/>
     </div>
   )
 }

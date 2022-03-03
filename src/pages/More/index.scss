@@ -1,0 +1,48 @@
+@import '../../scss/variable.scss';
+@import '../../scss/common.scss';
+.more{
+    @extend .flex;
+    flex-direction: column;
+    width: 100%;
+    .logo{
+     background-color: $blackColor;
+     width: 100%;
+     padding: 24px 0;
+     @extend .flex;
+        .logo-image{
+            object-fit: contain;
+        }
+    }
+    .description{
+        width: 100%;
+        @extend .flex;
+        flex-direction: column;
+    }
+    .black{
+        width: 100%;
+        background-color: $blackColor;
+        height: 80px;
+    }
+    .yellow,.brown,.heavy,.pink{
+        min-height: 300px;
+        width: 100%;
+        @extend .flex;
+        @extend .super-title-bold,
+    }
+    .yellow{
+        background-color: $lightPink;
+        color: $yellowColor;
+    }
+    .brown{
+        background-color:$brownColor;
+        color:$lightPink;
+    }
+    .heavy{
+     background-color: $heavyBlue;
+     color: $lightPink;   
+    }
+    .pink{
+        background-color: $lightPink;
+        color: $brownColor;
+    }
+}

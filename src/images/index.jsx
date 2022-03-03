@@ -7,6 +7,9 @@ import mojto from '../images/mojto.jpg';
 import NEGRONI from '../images/NEGRONI.jpg';
 import manhattan from '../images/manhattan.jpg';
 import homePageLogo from '../images/HOMEPAGELOGO.png';
+import logo2 from '../images/logo2.png';
+import logo3 from '../images/logo3.png';
+
 const images = {
   logo,
   logoHome1,
@@ -16,6 +19,8 @@ const images = {
   mojto,
   NEGRONI,
   manhattan,
-  homePageLogo
+  homePageLogo,
+  logo2,
+  logo3
 };
 export default images;
