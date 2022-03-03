@@ -23,7 +23,7 @@ const MorePage = () => {
           })
         }
        </div>
-        <div className='logo'>
+        <div className='logo last'>
             <img src={images.logo3} alt="" width={80} height={80} className="logo-image"/>
         </div>
     </div>
