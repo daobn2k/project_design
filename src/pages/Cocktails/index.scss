@@ -1,0 +1,274 @@
+@import '../../scss/variable.scss';
+@import '../../scss/common.scss';
+
+:root {
+  --primary: #23adad;
+  --greyLight: #23adade1;
+  --greyLight-2: #cbe0dd;
+  --greyDark: #2d4848;
+}
+
+.cocktails {
+  @extend .flex-start;
+  flex-direction: column;
+  width: 100%;
+  .search {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    @extend .flex-start;
+    padding: 0 100px;
+    padding-bottom: 50px;
+    gap: 16px;
+    .search-input {
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      padding: 0 16px;
+      width: 80%;
+      height: 40px;
+    }
+    .search-button {
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      padding: 2px 6px;
+      width: 20%;
+      max-width: 106px;
+      height: 40px;
+
+      background-color: $brownColor;
+      color: $lightPink;
+      text-transform: uppercase;
+      @extend .medium-title;
+      cursor: pointer;
+    }
+  }
+  .logo {
+    background-color: $blackColor;
+    width: 100%;
+    padding: 24px 0;
+    @extend .flex;
+    .logo-image {
+      object-fit: contain;
+    }
+  }
+  .title {
+    color: $brownColor;
+    font-size: 46px;
+    line-height: 52px;
+    font-weight: bold;
+  }
+  .cocktails {
+    background-color: $blackColor;
+    width: 100%;
+    @extend .flex;
+    flex-direction: column;
+    .cocktails-description {
+      @extend .flex-start;
+      flex-direction: column;
+      .cocktails-card {
+        width: 100%;
+        @extend .flex;
+        margin-bottom: 50px;
+        gap: 36px;
+        flex-basis: 50%;
+        .container {
+          height: 50%;
+          width: 50%;
+          background-size: cover;
+          height: 500px;
+          background-repeat: no-repeat;
+        }
+        .cocktails-detail {
+          @extend .flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          .cocktails-title {
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            @extend .medium-title;
+            color: $brownColor;
+            &:before {
+              content: '';
+              display: 'block';
+              color: #b3604b;
+              background-color: #b3604b;
+              width: 75%;
+              height: 4px;
+              position: absolute;
+              border-radius: 10px;
+              bottom: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .reverse {
+    flex-direction: row-reverse;
+    .cocktails-title {
+      align-items: flex-end !important;
+      justify-content: flex-end !important;
+      position: relative;
+      @extend .medium-title;
+      color: $brownColor;
+      &:before {
+        content: '';
+        display: 'block';
+        color: #b3604b;
+        background-color: #b3604b;
+        width: 75%;
+        height: 4px;
+        position: absolute;
+        border-radius: 10px;
+        bottom: -20px;
+      }
+    }
+    .cocktails-button {
+      width: 100%;
+      @extend .flex-end;
+    }
+  }
+  .cocktails-loadmore {
+    background: $heavyBlue;
+    color: $lightPink;
+    outline: none;
+    border: oldlace;
+    @extend .text-small;
+    width: 110px;
+    @extend .flex;
+    height: 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .cocktails-text {
+    @extend .text-small;
+    color: $brownColor;
+  }
+  .last {
+    border-bottom: 1px solid gray;
+    padding-bottom: 40px;
+  }
+  .pagging {
+    @extend .flex-end;
+    width: 100%;
+    background-color: $blackColor;
+    ul {
+      list-style-type: none;
+      background-color: $blackColor;
+    }
+
+    .items-list {
+      max-width: 90vw;
+      margin: 2rem;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 3rem;
+      justify-content: center;
+      align-content: center;
+
+      @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .item {
+      width: 10rem;
+      height: 10rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--greyDark);
+      cursor: pointer;
+
+      span {
+        background: #ffffff;
+        box-shadow: 0 0.8rem 2rem rgba(#5a6181, 0.05);
+        border-radius: 0.6rem;
+        padding: 2rem;
+        font-size: 3rem;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        span {
+          transform: scale(1.2);
+          color: var(--primary);
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        color: var(--greyLight);
+      }
+    }
+
+    .page {
+      @extend .flex;
+      padding-right: 100px;
+      margin: 0;
+      border-radius: 0.6rem;
+      box-shadow: 0 0.8rem 2rem rgba(#5a6181, 0.05);
+
+      svg{
+        color: $brownColor;
+      }
+      &__numbers,
+      &__btn,
+      &__dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+
+      &__dots {
+        width: 2.6rem;
+        height: 2.6rem;
+        color: $brownColor;
+        cursor: initial;
+      }
+
+      &__numbers {
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 0.4rem;
+        color: $brownColor;
+        @extend .medium-title-bold;
+        &:hover {
+          color: var(--greyLight);
+        }
+
+        &.active {
+          color: $lightPink;
+          background: $yellowColor;
+          font-weight: 600;
+          border: none;
+          border-radius: 50%;
+        }
+      }
+
+      &__btn {
+        color: var(--greyLight);
+        pointer-events: none;
+
+        &.active {
+          color: var(--greyDark);
+          pointer-events: initial;
+
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}

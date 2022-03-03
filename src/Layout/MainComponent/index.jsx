@@ -2,7 +2,8 @@ import React,{  } from 'react';
 import './index.scss';
 import { FaSearch } from "react-icons/fa";
 // import HomePage from '../../pages/HomePage';
-import MorePage from '../../pages/More';
+// import MorePage from '../../pages/More';
+import CocktailsPage from '../../pages/Cocktails';
 const MainComponent  = () => {
   return (
     <div  className='main'>
@@ -20,7 +21,8 @@ const MainComponent  = () => {
           </div>
         </div>
         {/* <HomePage /> */}
-        <MorePage/>
+        {/* <MorePage/> */}
+        <CocktailsPage />
     </div>
   )
 }

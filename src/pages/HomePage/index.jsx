@@ -23,19 +23,15 @@ const HomePage = () => {
         <h1 className="title">Cocktails</h1>
         <div className="cocktails-description">
           {listCocktails.map((i, index) => {
-              const styleImg = {
-                  width:index % 2 === 0 || index === 0 ? '40%' : '60%',
-                  height:250,
-              }
               const styleDiv = {
-                width:index % 2 === 0 || index === 0 ? '60%' : '40%',
+                width:'50%',
                 paddingLeft:index % 2 === 0 || index === 0 ? '30px' : '',
                 paddingRight:index === 1 ? '30px' : '',
 
               }
             return (
               <div className={`cocktails-card ${index === 1 ? '' : 'reverse'}`} key={index} >
-                <img src={i.url} alt="" className="cocktails-image" style={styleImg}/>
+                <div className="container" style={{backgroundImage: "url(" + i.url + ")"}}/>
                 <div className="cocktails-detail" style={styleDiv}>
                   <h1 className="cocktails-title">{i.title}</h1>
                   <p className="cocktails-text">{i.text}</p>
@@ -52,7 +48,7 @@ const HomePage = () => {
       <div className='news'>
         <div className="news-description">
               <div className='new-logo'> 
-              <img src={images.mojto} alt="" className="news-image" />
+              <img src={images.homePagePicture} alt="" className="news-image" />
               </div>
               <div className="news-card" >
                 <h1 className="title">News</h1>

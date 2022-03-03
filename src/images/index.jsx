@@ -5,8 +5,10 @@ import logoHome3 from '../images/logoHome3.png';
 import martini from '../images/martini.jpg';
 import mojto from '../images/mojto.jpg';
 import NEGRONI from '../images/NEGRONI.jpg';
+import DAIQUIRI from '../images/DAIQUIRI.jpg';
 import manhattan from '../images/manhattan.jpg';
 import homePageLogo from '../images/HOMEPAGELOGO.png';
+import homePagePicture from '../images/homepagepicture.jpg';
 import logo2 from '../images/logo2.png';
 import logo3 from '../images/logo3.png';
 
@@ -21,6 +23,8 @@ const images = {
   manhattan,
   homePageLogo,
   logo2,
-  logo3
+  logo3,
+  DAIQUIRI,
+  homePagePicture
 };
 export default images;

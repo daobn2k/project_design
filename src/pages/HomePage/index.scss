@@ -52,8 +52,14 @@
         @extend .flex;
         margin-bottom: 50px;
         gap: 36px;
-        .cocktails-image {
-          object-fit: cover;
+        width: 100%;
+        flex-basis: 50%;
+        .container {
+          height: 50%;
+          width: 50%;
+          background-size: cover;
+          height: 500px;
+          background-repeat: no-repeat;
         }
         .cocktails-detail {
           @extend .flex-start;
