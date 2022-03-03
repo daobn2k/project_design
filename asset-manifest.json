@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/project_design/static/css/main.d806ec57.css",
-    "main.js": "/project_design/static/js/main.1f3fd27e.js",
+    "main.css": "/project_design/static/css/main.5b978d0a.css",
+    "main.js": "/project_design/static/js/main.bae5ac87.js",
     "static/media/manhattan.jpg": "/project_design/static/media/manhattan.10004de05c1359ea8df4.jpg",
-    "static/media/logoHomePage.jpg": "/project_design/static/media/logoHomePage.64dade5ed1a956739b1a.jpg",
+    "static/media/homepagepicture.jpg": "/project_design/static/media/homepagepicture.2ed45a60862b5ccb3b99.jpg",
     "static/media/martini.jpg": "/project_design/static/media/martini.a2ef44683a04f038c0e6.jpg",
+    "static/media/DAIQUIRI.jpg": "/project_design/static/media/DAIQUIRI.c04a3fb1ed71e1b2af5d.jpg",
     "static/media/mojto.jpg": "/project_design/static/media/mojto.42819865f58a7be9c32a.jpg",
+    "static/media/logo2.png": "/project_design/static/media/logo2.2752dcbde6f62572e1c5.png",
+    "static/media/logo3.png": "/project_design/static/media/logo3.5a18b18f531325c3a46a.png",
     "static/media/HOMEPAGELOGO.png": "/project_design/static/media/HOMEPAGELOGO.da7c436ccb6d242dead1.png",
     "static/media/NEGRONI.jpg": "/project_design/static/media/NEGRONI.fa35808d88bbe7c92c1f.jpg",
     "static/media/logo.png": "/project_design/static/media/logo.f64a0f62f992cee5d2d0.png",
@@ -13,11 +16,11 @@
     "static/media/logoHome2.png": "/project_design/static/media/logoHome2.a5ba35dfc62d684ad6c7.png",
     "static/media/logoHome3.png": "/project_design/static/media/logoHome3.3cb88636654422de6b4e.png",
     "index.html": "/project_design/index.html",
-    "main.d806ec57.css.map": "/project_design/static/css/main.d806ec57.css.map",
-    "main.1f3fd27e.js.map": "/project_design/static/js/main.1f3fd27e.js.map"
+    "main.5b978d0a.css.map": "/project_design/static/css/main.5b978d0a.css.map",
+    "main.bae5ac87.js.map": "/project_design/static/js/main.bae5ac87.js.map"
   },
   "entrypoints": [
-    "static/css/main.d806ec57.css",
-    "static/js/main.1f3fd27e.js"
+    "static/css/main.5b978d0a.css",
+    "static/js/main.bae5ac87.js"
   ]
 }
