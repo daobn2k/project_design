@@ -6,7 +6,13 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  justify-content: flex-start;
   max-width: 450px;
+  gap: 12px;
+  p,h1,h2{
+      padding: 0;
+      margin: 8px 0;
+  }
   .card--img {
     background-size: cover;
     height: 300px;
@@ -27,7 +33,7 @@
         height: 4px;
         position: absolute;
         left: 50%;
-        bottom: -10px;
+        bottom: -15px;
         transform: translate(-50%,-50%);
       }
   } 
