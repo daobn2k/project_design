@@ -12,6 +12,13 @@ const News = () => {
           </div>
         );
       })}
+      <div className='news-footer'>
+       <h1 className="footer-title">ĐĂNG KÝ NHẬN BÀI VIẾT</h1>
+       <div className='footer-subrice'>
+        <input className='subrice-input' placeholder='Email Address'/>
+        <button className='subrice-button'>SUBCRIBE</button>
+       </div>
+      </div>
     </div>
   );
 };

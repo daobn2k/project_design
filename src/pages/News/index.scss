@@ -34,4 +34,47 @@
         column-gap: 85px;
         grid-template-columns: 1fr 1fr;
     }
+    .news-footer{
+        border-bottom: 1px solid gray;
+        width: 100%;
+        @extend .flex;
+        flex-direction: column;
+        .footer-title{
+            @extend .super-title;
+            color: $brownColor;
+        }
+        .footer-subrice{
+            padding: 50px;
+            width: 100%;
+            @extend .flex-start;
+            gap:24px;
+            .subrice-input{
+                cursor: pointer;
+                border: none;
+                outline: none;
+                width: 80%;
+                height: 56px;
+                padding: 0 24px;
+                @extend .medium-title;
+                font-family: 'Montserrat', sans-serif;
+                &::placeholder{
+                        @extend .medium-title;
+                        color: $brownColor;
+                }
+            }
+            .subrice-button{
+                @extend .flex;
+                @extend .medium-title;
+                cursor: pointer;
+                height: 56px;
+                padding: 0 24px;
+                border: none;
+                outline: none;
+                font-family: 'Montserrat', sans-serif;
+                color: $yellowColor;
+                background: $brownColor;
+            }
+        }
+    }
+  
 }
