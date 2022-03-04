@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project_design/static/css/main.2f36fc63.css",
-    "main.js": "/project_design/static/js/main.e0f60e12.js",
+    "main.js": "/project_design/static/js/main.7d0b2b44.js",
     "static/media/whiskey.jpg": "/project_design/static/media/whiskey.0caca6cd59a7843b5226.jpg",
     "static/media/adam.jpg": "/project_design/static/media/adam.c9bf6d0c6552a4b903cd.jpg",
     "static/media/gimmy.jpg": "/project_design/static/media/gimmy.7798ac8946ef5128d035.jpg",
@@ -40,10 +40,10 @@
     "static/media/cocktail_cosmopolitan-1.png": "/project_design/static/media/cocktail_cosmopolitan-1.0a872bea2f7563b6ed53.png",
     "index.html": "/project_design/index.html",
     "main.2f36fc63.css.map": "/project_design/static/css/main.2f36fc63.css.map",
-    "main.e0f60e12.js.map": "/project_design/static/js/main.e0f60e12.js.map"
+    "main.7d0b2b44.js.map": "/project_design/static/js/main.7d0b2b44.js.map"
   },
   "entrypoints": [
     "static/css/main.2f36fc63.css",
-    "static/js/main.e0f60e12.js"
+    "static/js/main.7d0b2b44.js"
   ]
 }
