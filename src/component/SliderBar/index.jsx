@@ -18,10 +18,10 @@ const SliderBar = (props) => {
         }}
         navigation={true}
         modules={[Pagination, Navigation ,Autoplay]}
-        // autoplay={{
-        //     delay: 1500,
-        //     disableOnInteraction: false,
-        // }}
+        autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+        }}
         className="mySwiper"
       >
           {
