@@ -32,6 +32,7 @@ import Blog1 from '../images/blog_1.jpg';
 import Blog2 from '../images/blog_2.jpg';
 import Blog3 from '../images/blog_3.jpg';
 import Blog4 from '../images/blog_4.jpg';
+import Adam from '../images/adam.jpg';
 const images = {
   logo,
   logoHome1,
@@ -62,6 +63,11 @@ const images = {
   Brontosaurus,
   Cuba,
   Mickey,
-  Monkey,Blog1,Blog2,Blog3,Blog4
+  Monkey,
+  Blog1,
+  Blog2,
+  Blog3,
+  Blog4,
+  Adam,
 };
 export default images;

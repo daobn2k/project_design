@@ -3,7 +3,33 @@
 .discovery-root{
   background: $blackColor;
   width: 100%;
-}
+  .discover-banner{
+    @extend .flex;
+    padding-top: 50px;
+    img{
+      height: 400px;
+      width: 750px;
+    }
+  }
+  .discover-suggest{
+    width: 100%;
+    @extend .flex;
+    .suggest-title{
+      @extend .medium-title-bold;
+      text-transform: uppercase;
+      color: $brownColor;
+      margin-right: 12px;
+    }
+    .suggest-list{
+      @extend .flex;
+      gap:12px;
+      .suggest-item{
+        width: 150px;
+        height: 25px;
+        background-color: $white;
+      }
+    }
+  }
   .discover {
   padding: 50px;
   background: $blackColor;
@@ -46,4 +72,5 @@
 
 .last{
   border-bottom: 1px solid gray;
+}
 }
