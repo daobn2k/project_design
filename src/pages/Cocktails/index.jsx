@@ -38,19 +38,19 @@ const CocktailsPage = () => {
         </div>
       </div>
       <div className="pagging">
-        <ul class="page">
-          <li class="page__btn">
+        <ul className="page">
+          <li className="page__btn">
           <FaAngleLeft />
           </li>
-          <li class="page__numbers active"> 1</li>
-          <li class="page__numbers">2</li>
-          <li class="page__numbers">3</li>
-          <li class="page__numbers">4</li>
-          <li class="page__numbers">5</li>
-          <li class="page__numbers">6</li>
-          <li class="page__dots">...</li>
-          <li class="page__numbers"> 10</li>
-          <li class="page__btn">
+          <li className="page__numbers active"> 1</li>
+          <li className="page__numbers">2</li>
+          <li className="page__numbers">3</li>
+          <li className="page__numbers">4</li>
+          <li className="page__numbers">5</li>
+          <li className="page__numbers">6</li>
+          <li className="page__dots">...</li>
+          <li className="page__numbers"> 10</li>
+          <li className="page__btn">
           <FaAngleRight />
           </li>
         </ul>

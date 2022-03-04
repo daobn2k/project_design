@@ -12,7 +12,7 @@ const MorePage = () => {
           listMore.map((i,index)=>{
             return(
             <>
-              <div className={i.className}>
+              <div className={i.className} key={index}>
                   {i.title}
               </div>  
              {

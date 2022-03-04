@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import CardDiscover from '../../component/CardDiscover';
-import SliderBar from '../../component/SliderBar';
 import images from '../../images';
 import './index.scss';
 
 const Discover = () => {
   return (
     <div className='discovery-root'> 
-    <SliderBar /> 
+    <div className='discover-banner'>
+      <img src={images.Adam} alt=""/>
+    </div>
+    <div className='discover-suggest'>
+      <h1 className='suggest-title'>Gợi ý:</h1>
+      <div className='suggest-list'>
+        <div className='suggest-item'></div>
+        <div className='suggest-item'></div>
+        <div className='suggest-item'></div>
+        <div className='suggest-item'></div>
+      </div>
+    </div>
     {
       listIconicCocktails.map((item,index)=>{
         return(
           <div key={index} style={{width:'100%'}}>
-            <ItemDisCover item={item} index={index}/>
+            <ItemDisCover item={item} ind={index}/>
           </div>
         )
       })
@@ -23,9 +33,9 @@ const Discover = () => {
 export default Discover;
 
 
-const ItemDisCover = ({ item ,index}) =>{
+const ItemDisCover = ({ item ,ind}) =>{
   const { title , text ,list ,center} = item
-  return  <div className={`discover ${index ===  listIconicCocktails?.length - 1 ? 'last': ''}`} key={index} >
+  return  <div className={`discover ${ind ===  listIconicCocktails?.length - 1 ? 'last': ''}`}>
   <h1 className="discover-title">{title}</h1>
   <div className="discover-detail">
     <img src={images.logo3} alt="" width={80} height={80} className="detail-image" />
@@ -38,7 +48,9 @@ const ItemDisCover = ({ item ,index}) =>{
     {
       list.map((ele,index)=>{
         return(
+          <Fragment key={index}>
           <CardDiscover title={ele.title} content={ele.text} url={ele.image} center={center} index={index}/>
+          </Fragment>
         )
       })
     }
